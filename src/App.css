@@ -1,39 +1,38 @@
+#root, #root-container, html, body, .App {
+  height: 100%;
+  width: 100%;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(229, 229, 229, 0.359);
 }
 
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  display: inline-flex;
   font-size: calc(10px + 2vmin);
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 10px 5px lightgray;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+#header p {
+  margin-top: 1%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.main-div {
+  width: 100%;
+  font-size: calc(10px + 2vmin);
+  height: 100%;
+  margin-top: 1.5%;
 }
+
