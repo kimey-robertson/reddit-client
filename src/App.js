@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import SearchBar from './features/searchBar/SearchBar';
+import MainDataDisplay from './features/mainDataDisplay/MainDataDisplay';
+
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
             </div>
             <div className='row'>
                 <div className='col'>
-                    <p>Main</p>
+                    <MainDataDisplay />
                 </div>
             </div>
           </div>

@@ -10,9 +10,12 @@ export const searchBarSlice = createSlice({
     reducers: {
         log: (state) => {
             console.log(state.searchTerm);
+        },
+        setSearchTerm: (state, action) => {
+            state.searchTerm = action.payload
         }
     }
 });
 
-export const { log } = searchBarSlice.actions;
+export const { log, setSearchTerm } = searchBarSlice.actions;
 export default searchBarSlice.reducer;
