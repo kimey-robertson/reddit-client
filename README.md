@@ -7,5 +7,7 @@ I am going to use the Reddit API to gather data to display on the page, based on
 # Commits
 
 First commit:
+
 -Set up basic html and css ui
+
 -Set up React & Redux boilerplate code
