@@ -1,7 +1,7 @@
 import React from 'react';
 import './Posts.css';
 import { useSelector, useDispatch } from 'react-redux';
-import {setCurrentlyOpenedPost } from '../mainDataDisplay/mainDataDisplaySlice'
+import {setCurrentlyOpenedPost } from '../mainDataDisplay/mainDataDisplaySlice';
 
 
 export default function Posts() {

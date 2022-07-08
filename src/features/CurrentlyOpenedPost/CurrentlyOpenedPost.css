@@ -1,0 +1,12 @@
+.currentlyOpenedPost {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .currentPost {
+    display: flex;
+} */
+
+#back-btn {
+    align-self: flex-start;
+}

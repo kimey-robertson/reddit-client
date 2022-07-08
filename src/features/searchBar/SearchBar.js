@@ -25,6 +25,7 @@ export default function SearchBar() {
   }
 
   return (
+    
     <div>
       <form onSubmit={handleSubmit}>
         <div>
@@ -39,9 +40,7 @@ export default function SearchBar() {
         </div>
       </form>
 
-      {/* <button className="btn" >
-        Nothing
-      </button> */}
+
     </div>
   );
 }
