@@ -1,8 +1,19 @@
+import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = {
+  currentlyOpenedPost: ""
+};
 
+export const mainDataDisplaySlice = createSlice({
+  name: "mainDataDisplay",
+  initialState: initialState,
+  reducers: {
+    setCurrentlyOpenedPost: (state, action) => {
+        state.currentlyOpenedPost = action.payload;
+    },
 
-function fetchData() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-        .then(res => res.json())
-        .then(data => {console.log(data)})
-}
+  },
+});
+
+export const { setCurrentlyOpenedPost } = mainDataDisplaySlice.actions;
+export default mainDataDisplaySlice.reducer;

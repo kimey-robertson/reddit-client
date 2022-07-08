@@ -2,25 +2,26 @@ import React from "react";
 import "./SearchBar.css";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  log,
-  setSearchTerm,
-  setUserData,
+  setRedditData,
 } from "../searchBar/searchBarSlice.js";
+import { setCurrentlyOpenedPost } from "../mainDataDisplay/mainDataDisplaySlice.js"
 
 export default function SearchBar() {
   const dispatch = useDispatch();
+  const currentlyOpenedPost = useSelector(state => state.mainDataDisplay.currentlyOpenedPost);
 
   async function searchReddit(queryString) {
     const url = `https://www.reddit.com/search.json?q=${queryString}`;
     const res = await fetch(url);
     const data = await res.json();
-    dispatch(setUserData(data));
-    console.log(data);
+    dispatch(setRedditData(data));
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    searchReddit(event.target.search.value)
+    dispatch(setCurrentlyOpenedPost(''));
+    searchReddit(event.target.search.value);
+    
   }
 
   return (

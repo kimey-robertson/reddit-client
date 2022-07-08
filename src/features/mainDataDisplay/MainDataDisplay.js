@@ -1,9 +1,12 @@
 import React from 'react';
+import './MainDataDisplay.css';
 import { useSelector, useDispatch } from 'react-redux';
+import Posts from '../Posts/Posts.js';
+import CurrentlyOpenedPost from '../CurrentlyOpenedPost/CurrentlyOpenedPost';
 
 export default function MainDataDisplay() {
-    const searchTerm = useSelector(state => state.searchBar.searchTerm);
-    const userData = useSelector(state => state.searchBar.userData);
+    const currentlyOpenedPost = useSelector(state => state.mainDataDisplay.currentlyOpenedPost);
+    const redditData = useSelector(state => state.searchBar.redditData);
     
 
 
@@ -22,16 +25,8 @@ export default function MainDataDisplay() {
     
     return (
         <div>
-          <div>
-          {userData.data && userData.data.children.map(post => (
-            // post.data.thumbnail !== 'spoiler' && post.data.thumbnail !== 'self' && post.data.thumbnail !== 'default' && post.data.thumbnail !== 'image' &&
-            <div>
-              Subreddit: {post.data.subreddit}
-             {/* <img src={post.data.thumbnail} width='500px' height='500px' ></img> */}
-             <img src={post.data.url_overridden_by_dest} width='500px' height='500px' ></img>
-            </div>
-          ))}
-          </div>
+          {!currentlyOpenedPost && <Posts />}
+          {currentlyOpenedPost && <CurrentlyOpenedPost />}
         </div>
     
   )
