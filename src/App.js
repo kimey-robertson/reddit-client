@@ -12,28 +12,28 @@ function App() {
       <div className="App">
         <div className='container' id="App-header">
           <div className='row'>
-              <div className='col' id='header'>
-                  <p>Reddit Client</p>
-              </div>
+            <div className='col d-flex align-items-center'>
+              <h1 className='mb-0'>Reddit Client</h1>
+            </div>
           </div>
         </div>
         <main className='main-div'>
           <div className='container'>
             <div className='row'>
-                <div className='col'>
-                    <SearchBar />
-                </div>
+              <div className='col'>
+                <SearchBar />
+              </div>
             </div>
             <div className='row'>
-                <div className='col'>
-                    <MainDataDisplay />
-                </div>
+              <div className='col'>
+                <MainDataDisplay />
+              </div>
             </div>
           </div>
         </main>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

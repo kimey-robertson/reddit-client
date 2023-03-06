@@ -1,38 +1,48 @@
-#root, #root-container, html, body, .App {
+#root-container, html, body {
   height: 100%;
   width: 100%;
+  background-color: #f2f2f2;
 }
 
 .App {
-  text-align: center;
+  min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(229, 229, 229, 0.359);
+  flex-direction: column;
+  
 }
 
-.App-header {
-  height: 100%;
+#App-header {
+  background-color: #fff;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 #header {
-  width: 100%;
-  display: inline-flex;
-  font-size: calc(10px + 2vmin);
-  background-color: rgb(255, 255, 255);
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  box-shadow: 0 10px 5px lightgray;
-}
-
-#header p {
-  margin-top: 1%;
+  height: 100%;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .main-div {
-  width: 100%;
-  font-size: calc(10px + 2vmin);
-  height: 100%;
-  margin-top: 1.5%;
+  padding: 2rem 0;
+  flex-grow: 1;
 }
 
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
