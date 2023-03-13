@@ -19,4 +19,7 @@ This React-Redux based web application fetches and displays Reddit posts based o
 - Bootstrap
 - Reddit API
 
+# Getting started
+
+Reddit client is hosted live and can be accessed by visiting https://kimey-robertson.github.io/reddit-client/. No installation or download is required.
 
