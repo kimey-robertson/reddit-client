@@ -1,13 +1,10 @@
-# Reddit client
+# Reddit Client
 
-This app is my first attempt at setting up an enitre front end, using React and Redux.
+This React-Redux based web application fetches and displays Reddit posts based on user search terms. The app uses the official Reddit API to retrieve data and displays it in a clean and user-friendly way.
 
-I am going to use the Reddit API to gather data to display on the page, based on the user's search terms.
+# Features
+- Allows users to search for posts by entering keywords in the search bar.
+- Fetches the most recent posts from the selected subreddit.
+- Displays post title, author, and date in a card format.
+- Provides a clickable link to view the full post on Reddit.
 
-# Commits
-
-First commit:
-
--Set up basic html and css ui
-
--Set up React & Redux boilerplate code
