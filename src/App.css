@@ -46,3 +46,16 @@ h1 {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 680px) {
+  body .post {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  body .posts {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -19,7 +19,6 @@ export default function Posts() {
               <div
                 className="post row"
                 onClick={() => {
-                  console.log("post clicked");
                   dispatch(setCurrentlyOpenedPost(post.data.id));
                 }}
               >
